@@ -1,0 +1,8 @@
+services:
+  jupyter:
+    image: quay.io/jupyter/minimal-notebook:latest
+    container_name: jupyter-python
+    volumes:
+      - ${LOCAL_DIR}:/home/jovyan/work
+    ports:
+      - 10001:8888

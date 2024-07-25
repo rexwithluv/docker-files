@@ -1,0 +1,12 @@
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    restart: always
+    ports:
+      - 80:3000
+    volumes:
+      - /var/www/homepage:/app/config
+      - /var/www/homepage/icons:/app/public/icons # For icons
+      - /var/www/homepage/images:/app/public/images # For backgrounds
+      - /var/run/docker.sock:/var/run/docker.sock # For docker integrations
