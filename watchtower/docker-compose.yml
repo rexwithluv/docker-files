@@ -10,4 +10,8 @@ services:
       - WATCHTOWER_HTTP_API_TOKEN=${WATCHTOWER_HTTP_API_TOKEN}
       - WATCHTOWER_HTTP_API_METRICS=true
       - WATCHTOWER_POLL_INTERVAL=21600
-    restart: always
+
+    # If you want to run only once
+    restart: always         # Comment this
+    #command: --run-once    # Uncomment this
+
