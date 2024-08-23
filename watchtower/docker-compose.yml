@@ -9,7 +9,7 @@ services:
     environment:
       - WATCHTOWER_HTTP_API_TOKEN=${WATCHTOWER_HTTP_API_TOKEN}
       - WATCHTOWER_HTTP_API_METRICS=true
-      - WATCHTOWER_POLL_INTERVAL=21600
+      - WATCHTOWER_POLL_INTERVAL=86400
 
     # If you want to run only once
     restart: always         # Comment this
